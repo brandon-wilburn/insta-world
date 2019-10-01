@@ -9,6 +9,7 @@
 <body>
 
 	<a-scene>
+		<!-- Assets -->
 		<a-assets>
 			<img id="background" src="rocky.jpg">
 			<img id="grass" src="grass.jpg">
@@ -18,18 +19,24 @@
 			<a-asset-item id="the-mtl" src="theactuallasttry.mtl"></a-asset-item> -->
 		</a-assets>
 
-		<!-- <a-obj-model id="web_page" src="assets/oneMoreTime.gltf" color="white" position="-0.92801 0.628 -1.5"></a-obj-model> -->
+		<!-- Objects -->
+
+		<!-- The Gram -->
 		<a-entity gltf-model="assets/oneMoreTime.gltf" material="src: #someBullshitmtl" scale="0.78 0.75 0.5" position="-1 .5 -4"></a-entity>
-		<!-- <a-entity obj-model="obj: #the_gram; mtl: #the_mtl"></a-entity> -->
+
+		<!-- Environment -->
 		<a-entity environment="preset: forest"></a-entity>
+
+		<!-- Filters -->
+		
 
 		<!-- Camera and Cursor -->
 		<a-entity camera look-controls position="0 1.6 0">
-			<a-entity cursor="fuse: true; fuseTimeout: 500"
-            	position="0 0 -1"
-            	geometry="primitive:  ring;  radiusInner:  0.01;  radiusOuter:  0.02"
-            	material="color: white; shader: flat">
-		  </a-entity>
+<!-- 			<a-entity 	cursor="fuse: true; fuseTimeout: 500"
+            			position="0 0 -1"
+            			geometry="primitive:  ring;  radiusInner:  0.01;  radiusOuter:  0.02"
+            			material="color: white; shader: flat">
+		 	</a-entity> -->
 		</a-entity>
 	</a-scene>
 
