@@ -17,6 +17,7 @@
 			<a-asset-item id="orangeFilter" src="https://image.shutterstock.com/image-photo/abstract-blur-vintage-background-filter-260nw-379532809.jpg"></a-asset-item>
 			<!-- <a-asset-item id="the_gram" src="assets/theactuallasttry.obj"></a-asset-item> -->
 			<img id="orangeFilterTwo" src="assets/orange.png"></img>
+			<img id="o2b" src="assets/o2b.png"></img>
 		</a-assets>
 
 		<!-- Objects -->
@@ -28,8 +29,12 @@
 		<a-entity environment="preset: forest"></a-entity>
 
 		<!-- Filters -->
-		<a-entity geometry="primitive: plane" position="-0.09626 1.80813 -4.051" scale="1.2 1.2 1.2" material="side: double; src: #orangeFilterTwo ; transparent: true"></a-entity>
-		<!-- <a-entity geometry="primitive: plane" position="5 1.76 -4.051" scale="1.5 1.5 1.5" material="side: double; shader: flat; transparent: true; src: #orangeFilter"></a-entity> -->
+
+		<!-- Orange Filter -->
+<!-- 		<a-entity geometry="primitive: plane" position="-0.09626 1.80813 -4.051" scale="1.2 1.2 1.2" material="side: double; src: #orangeFilterTwo ; transparent: true; blending: additive"></a-entity> -->
+
+		<!-- Orange to Blue Filter -->
+		<a-entity geometry="primitive: plane" position="-0.09626 1.80813 -4.051" scale="1.2 1.2 1.2" material="side: double; src: #o2b ; transparent: true; blending: additive"></a-entity>
 
 
 		<!-- Camera and Cursor -->
