@@ -44,6 +44,9 @@
 			<a-entity id="purp" geometry="primitive: plane" position="-0.09626 1.80813 -4.051" scale="0 1.2 1.2" material="side: double; src: #purple ; transparent: true; blending: additive"></a-entity>
 			<a-entity id="purpleButton" geometry="depth: 0.3; height: 0.58; width: 0.3" position="0.24403 0.897 -3.93351"></a-entity>
 
+			<!-- Clear Filter -->
+			<a-entity id="clear" geometry="depth: 0.3; height: 0.58; width: 0.3" position="0.81548 0.897 -3.93351"></a-entity>
+
 		<!-- Camera and Cursor -->
 		<a-entity camera look-controls position="0 1.6 0">
 			<a-entity 	cursor="fuse: true; fuseTimeout: 500"
@@ -115,6 +118,30 @@
 			document.querySelector('#purp').setAttribute('scale',
 			{
 				x: 1.2,
+				y: 1.2,
+				z: 1.2
+			});
+			document.querySelector('#orange').setAttribute('scale',
+			{
+				x: 0,
+				y: 1.2,
+				z: 1.2
+			});
+			document.querySelector('#otb').setAttribute('scale',
+			{
+				x: 0,
+				y: 1.2,
+				z: 1.2
+			});
+		});
+
+		var clear = document.querySelector('#clear');
+		console.log(purpleButton);
+		clear.addEventListener("click", function (){
+			console.log("Setting scale");
+			document.querySelector('#purp').setAttribute('scale',
+			{
+				x: 0,
 				y: 1.2,
 				z: 1.2
 			});
